@@ -9,7 +9,7 @@ export class PhotoComponent implements OnInit {
 
   constructor() { }
 
-  @Input() descricao = "";
+  @Input() description = "";
   @Input() url = "";
 
   ngOnInit() {
