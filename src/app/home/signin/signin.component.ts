@@ -2,7 +2,7 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AuthService } from 'src/app/core/auth/auth.service';
-import { PlataformDetectorService } from 'src/app/core/plataform-detector.service';
+import { PlataformDetectorService } from 'src/app/core/plataform-detector/plataform-detector.service';
 
 @Component({
   selector: 'app-signin',
@@ -39,7 +39,7 @@ export class SigninComponent implements OnInit {
           console.log(err);
           this.platformDetectorService.isPlatformBrowser() && this.userNameInput.nativeElement.focus();
           this.loginForm.reset();
-          alert("")
+          alert("Usuario ou Senha invalidos!");
         }
       )
   }
