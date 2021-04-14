@@ -10,3 +10,12 @@ Projeto/curso:
 - Acelere seu desenvolvimento com Bootstrap 4
 - Domine a organização em módulos
 - Integre com o backend NodeJS como exemplo
+
+## Angular parte 2: Autenticação, Forms e lazy loading
+- Entenda como é o fluxo de autenticação de uma SPA
+- Aprenda a automatizar o envio do token de autenticação
+- Proteja rotas que requerem autenticação
+- Melhore a performance da aplicação através de lazy loading
+- Avance ainda mais no uso de Observables e Subjects
+- Crie seu próprio validador de formulários
+- Vá além implementando validação assíncrona
