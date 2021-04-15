@@ -19,3 +19,10 @@ Projeto/curso:
 - Avance ainda mais no uso de Observables e Subjects
 - Crie seu próprio validador de formulários
 - Vá além implementando validação assíncrona
+
+## Angular parte 3: upload, build e novos componentes
+- Aprenda a realizar uploads dentro do framework
+- Aprenda a lidar com segmentos de rotas
+- Avance na questão de permissões de usuários autenticados
+- Aprenda a diferenciar diferentes ambientes de deploy
+- Pratique ainda mais a construção de componentes
