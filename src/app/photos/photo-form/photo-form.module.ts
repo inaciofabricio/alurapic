@@ -5,6 +5,8 @@ import { RouterModule } from '@angular/router';
 import { PhotoFormComponent } from './photo-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { VmessageModule } from 'src/app/shared/components/vmessage/vmessage.module';
+import { PhotoModule } from '../photo/photo.module';
+import { ImmediateClickModule } from 'src/app/shared/directives/immediate-click/immediate-click.module';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { VmessageModule } from 'src/app/shared/components/vmessage/vmessage.modu
     ReactiveFormsModule,
     FormsModule,
     VmessageModule,
-    RouterModule
+    RouterModule,
+    PhotoModule,
+    ImmediateClickModule
   ],
 })
 export class PhotoFormModule { }
