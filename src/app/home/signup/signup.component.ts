@@ -6,6 +6,7 @@ import { lowerCaseValidador } from 'src/app/shared/validators/lower-case.validad
 import { NewUser } from './new-user';
 import { SignupService } from './signup.service';
 import { UserNotTakenValidatorService } from './user-not-taken.validator.service';
+import { userNamePassword } from './username-password.validator';
 
 @Component({
   selector: 'app-signup',
@@ -61,18 +62,24 @@ export class SignupComponent implements OnInit {
           Validators.maxLength(14)
         ]
       ]
+    },{
+      validator: userNamePassword
     });
     this.platformDetectorService.isPlatformBrowser() && this.emailInput.nativeElement.focus();
   }
 
   signup(){
-    const newUser = this.signupForm.getRawValue() as NewUser;
-    this.signupService
-      .signup(newUser)
-      .subscribe(() => 
-        this.router.navigate(['']),
-        err => console.log(err)
-      );
+    if (this.signupForm.valid && !this.signupForm.pending) {
+      const newUser = this.signupForm.getRawValue() as NewUser;
+      this.signupService
+        .signup(newUser)
+        .subscribe(() => 
+          this.router.navigate(['']),
+          err => console.log(err)
+        );
+    } else {
+
+    }
   }
 
 }
