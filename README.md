@@ -26,3 +26,10 @@ Projeto/curso:
 - Avance na questão de permissões de usuários autenticados
 - Aprenda a diferenciar diferentes ambientes de deploy
 - Pratique ainda mais a construção de componentes
+
+## Angular parte 4: lapidando o projeto
+- Avance na criação de componentes
+- Lide com progresso em uploads
+- Aprenda a tratar erros sofisticadamente
+- Avance na validação de formulários
+- Utilize interceptadores ao seu favor
