@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  ApiUrl: 'http://sua.api.com:3000'
 };
