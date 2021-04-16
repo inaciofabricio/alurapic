@@ -24,7 +24,8 @@ export class SignupComponent implements OnInit {
     private userNotTakenValidatorService : UserNotTakenValidatorService,
     private signupService: SignupService,
     private router: Router,
-    private platformDetectorService: PlataformDetectorService
+    private platformDetectorService: PlataformDetectorService,
+    
   ) { }
 
   ngOnInit() : void{
